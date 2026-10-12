@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: placewell
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: node --disable-warning=ExperimentalWarning server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: NODE_ENV
+        value: production
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_PASSWORD
+        sync: false
+    disk:
+      name: placewell-data
+      mountPath: /var/data
+      sizeGB: 1

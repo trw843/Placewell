@@ -1,0 +1,19 @@
+body.adm{font-size:17px}
+.adm .shell{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.adm .sidebar{background:#fff;border-right:1px solid var(--ink);padding:24px 20px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:auto}
+.adm .sidebar nav{display:flex;flex-direction:column}
+.adm .sidebar nav a{font-family:var(--display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:11px 8px;border-bottom:1px solid var(--hair);display:flex;justify-content:space-between;align-items:center}
+.adm .sidebar nav a:hover{color:var(--ink);background:var(--sage-soft)}
+.adm .sidebar nav a.on{color:var(--ink);font-weight:700;border-left:3px solid var(--forest);padding-left:10px}
+.adm .content{padding:36px clamp(20px,4vw,56px) 80px;min-width:0}
+.adm .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.adm .bar .field,.adm .bar select{margin:0;max-width:190px}
+.adm .login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.adm .tabs{display:flex;border-bottom:1px solid var(--ink);margin-bottom:24px;flex-wrap:wrap}
+.adm .tabs button{font-family:var(--display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:12px 20px;border:1px solid transparent;border-bottom:0;background:none;cursor:pointer;color:var(--muted)}
+.adm .tabs button.on{background:#fff;border-color:var(--ink);color:var(--ink);font-weight:700;margin-bottom:-1px}
+.adm code{font-family:ui-monospace,Menlo,monospace;font-size:.85em;background:var(--sage-soft);padding:1px 5px}
+.adm .grid{gap:16px}
+.adm .card{padding:22px}
+@media(max-width:860px){.adm .shell{grid-template-columns:1fr}.adm .sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--ink)}.adm .sidebar nav{flex-direction:row;flex-wrap:wrap}.adm .sidebar nav a{border:1px solid var(--hair);margin:2px}}
+.adm .table{display:block;overflow-x:auto}

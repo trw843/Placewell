@@ -1,0 +1,19 @@
+{
+  "name": "placewell",
+  "version": "1.0.0",
+  "description": "Placewell — civic careers job board with admin, bulk import and automated source importers",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "import": "node scripts/import-file.js",
+    "seed:demo": "node scripts/seed-demo.js",
+    "clear:demo": "node scripts/clear-demo.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "express": "^4.21.2",
+    "fast-xml-parser": "^4.5.1"
+  }
+}
